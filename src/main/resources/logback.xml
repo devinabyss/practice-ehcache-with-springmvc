@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>%d{yy.MM.dd HH:mm:ss.SSS} [%thread{0}] [%logger{0}.%method{0} :%-4.4line] [%-5level] %msg%n</Pattern>
+        </encoder>
+    </appender>
+    
+    <root level="${log.level}">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+    <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />
+</configuration>
