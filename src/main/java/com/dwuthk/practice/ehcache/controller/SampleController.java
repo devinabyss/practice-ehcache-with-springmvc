@@ -26,7 +26,7 @@ public class SampleController {
      * @return
      */
     @RequestMapping(
-            value = "getNormal1",
+            value = "getNormal12",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE
     )
