@@ -1,2 +1,6 @@
-# Practice Ehcache With SpringMVC (practice-ehcache-with-springmvc)
+# Practice Ehcache With SpringMVC
+
+### TO-DO
+1. Ehcache Monitoring Config
+2. Cache Replication Config
 
