@@ -1,5 +1,8 @@
 # Practice Ehcache With SpringMVC
 
+## Guide
+[Spring - Ehcache 적용 정리](http://dev.dwuthk.com/entry/Spring-Ehcache-%EC%A0%81%EC%9A%A9-%EC%A0%95%EB%A6%AC)
+
 ## Default Key Generator Implementation
 ```java
 public class DefaultKeyGenerator implements KeyGenerator {
