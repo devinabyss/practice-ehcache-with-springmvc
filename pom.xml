@@ -4,7 +4,7 @@
 
     <groupId>com.dwuthk</groupId>
     <artifactId>practice-ehcache-with-springmvc</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <packaging>war</packaging>
 
     <name>Practice - Ehcache With SpringMVC</name>
