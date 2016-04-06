@@ -7,6 +7,7 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
@@ -33,7 +34,12 @@ public class SampleService {
     public Map<String, Object> getNormalDataCaching(String param) {
 
         return generateMap(param);
+    }
 
+    @CacheEvict(value = "normal", key = "#param")
+    public Map<String, Object> getNormalDataEraseCache(String param) {
+
+        return generateMap(param);
     }
 
     @Cacheable(value = "multi-param")
@@ -74,6 +80,7 @@ public class SampleService {
 
     /**
      * MyBatis Mapper 를 통해 DB 의 해당 데이터 조회하여 리턴
+     *
      * @param id
      * @return
      */

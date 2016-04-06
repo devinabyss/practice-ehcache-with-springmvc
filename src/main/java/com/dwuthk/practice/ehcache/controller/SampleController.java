@@ -72,6 +72,26 @@ public class SampleController {
 
         return service.getNormalDataDefaultKeyStrategy(param1, param2, param3);
     }
+    
+    
+    /**
+     * Get Non-Cached Data From ServiceLayer Generated And Erase Cached Data By Key
+     *
+     * @param param
+     * @return
+     */
+    @RequestMapping(
+            value = "getNormal4",
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE
+    )
+    public Map getNormalNonCacheErase(
+            @RequestParam(value = "param", required = true) String param
+    ) {
+
+        return service.getNormalDataEraseCache(param);
+    }
+    
 
     /**
      * Get Non-Cached Data From Database through Myabatis Mapper
